@@ -8,10 +8,11 @@ ENV/
 env.bak/
 venv.bak/
 
-Jobsphere-Roadmap.pdf
-Jobsphere_Roadmap.md
-Roadmap.md
-to-do.md
+Jobsphere-Roadmap.pdf/
+Jobsphere_Roadmap.md/
+Roadmap.md/
+to-do.md/
+
 # Python
 __pycache__/
 *.py[cod]
