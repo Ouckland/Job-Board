@@ -17,7 +17,7 @@ DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = os.environ.get(
     "DJANGO_ALLOWED_HOSTS",
-    "127.0.0.1,localhost,.ngrok.io,.ngrok-free.app"
+    "127.0.0.1,localhost,job-board-lpmo.onrender.com"
 ).split(",")
 
 
@@ -173,3 +173,5 @@ if not DEBUG:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     SECURE_HSTS_SECONDS = 31536000  # 1 year
+
+
