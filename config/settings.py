@@ -16,7 +16,7 @@ DEBUG = os.environ.get("DEBUG", "True").lower() == "true"
 
 ALLOWED_HOSTS = os.environ.get(
     "DJANGO_ALLOWED_HOSTS",
-    "127.0.0.1,localhost,job-board-lpmo.onrender.com"
+    "127.0.0.1,localhost,jobsphere-3kdi.onrender.com"
 ).split(",")
 
 
@@ -140,7 +140,7 @@ USE_TZ = True
 
 SECURITY_EMAIL_CHANGE_LIMIT = "2/m"  # 2 attempts per minute
 
-SITE_URL = os.environ.get("SITE_URL", "http://localhost:8000")
+SITE_URL = os.environ.get("SITE_URL", "https://jobsphere-3kdi.onrender.com")
 
 
 

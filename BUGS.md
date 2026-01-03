@@ -29,3 +29,6 @@ DJANGO_SUPERUSER_USERNAME=admin
 EMAIL_HOST_PASSWORD=msdvlspamsncjqrf
 EMAIL_HOST_USER=jobboard@gmail.com
 SITE_URL=https://job-board.onrender.com
+
+
+site url and allowed host
