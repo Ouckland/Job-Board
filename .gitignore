@@ -8,6 +8,8 @@ ENV/
 env.bak/
 venv.bak/
 
+# Logs
+BUGS.md/
 Jobsphere-Roadmap.pdf/
 Jobsphere_Roadmap.md/
 Roadmap.md/
