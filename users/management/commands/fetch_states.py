@@ -6,6 +6,10 @@ class Command(BaseCommand):
     help = 'Load states from local JSON file'
 
     def handle(self, *args, **kwargs):
+        if State.objects.exists():
+            self.stdout.write(self.style.SUCCESS("States already exist. Skipping fetch."))
+            return
+
         with open('users/management/commands/data/states.json', encoding='utf-8') as f:
             states_data = json.load(f)
 
@@ -17,6 +21,7 @@ class Command(BaseCommand):
             except Country.DoesNotExist:
                 self.stderr.write(f"Country not found: {country_name}")
                 continue
+
             State.objects.update_or_create(
                 country=country,
                 name=state_name
